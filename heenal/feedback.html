@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>login</title>
+	<style type="text/css">
+		
+		div{
+			background: white;
+			border: 2px solid black;
+			padding: 5%;
+			margin-left: 35%;
+			margin-right: 35%;		
+			margin-top: 5%;	
+			outline-style:solid;
+  outline-color: white;	
+  outline-width: 15px;
+		}
+		#submit{
+			background: orange;
+			width: 210px;	
+			margin-bottom: 10px;
+		}
+		input{
+			width: 200px;
+		}
+		
+	</style>
+</head>
+<body style="background-image: url(pictures/bg1.jpeg);background-repeat: no-repeat;background-attachment: fixed;background-size: cover;">
+	
+<a href="Index.html"><img src="pictures/arrow.png" width="40px" style="margin:5px; float: left;"></a>
+	<center><h1><span class="typing"></span></h1></center>
+	<div>
+	<form action="Complete.html">
+	<label for="name">Name</label><br>
+    <input type="text" name="name" id="name" required="name"><br><br>
+	<label for="email">Email</label><br>
+    <input type="email" name="email" id="email" required="email"><br><br>
+    <label for="msg">Message</label><br>
+    <input type="text" name="msg" id="msg" required="msg"><br><br>
+    <input type="submit" name="submit" id="submit" value="submit">
+   
+</form>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js" referrerpolicy="no-referrer"></script>
+<script src="./feedback.js"></script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<?php include('server.php') ?>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Register</title>
+	<link rel="stylesheet" type="text/css" href="bootstrap.css">
+	<style type="text/css">
+		.design{
+			background: white;
+            border: 2px solid black;
+            padding: 2%;
+            margin-left: 35%;
+            margin-right: 35%;      
+            margin-top: 3%; 
+            outline-style:solid;
+            outline-color: white; 
+            outline-width: 15px;
+		}
+	    input{width: 250px;}
+	</style>
+</head>
+<body class="bg-primary" style="background-image: url(pictures/bg2.jpeg);background-repeat: no-repeat;background-attachment: fixed;background-size: cover;">
+
+
+<a href="Index.html"><img src="pictures/arrow.png" width="40px" style="margin:5px; float: left;"> Back to Home</a>
+	<div class="container-fluid" style="margin-top: -20px;">
+		<div class="row my-1" style="margin-left: 350px;">
+			<h1><span class="typing"></span></h1>
+	    </div>		
+	    <div class="row justify-content-center design" >
+	    	<form method="post" action="registration.html">
+	    		<h2><b>Registration</b></h2>
+	            <div class="form-group"> 
+	            	<label for="name">Username*</label><br>
+                    <input type="text" name="name" id="name" required="name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email*</label><br>
+                    <input type="email" name="email" id="email" required="email">
+                </div>
+                <div class="form-group">
+                    <label for="pass">Password*</label><br>
+                    <input type="password" name="pass" id="pass" required="pass">
+                </div>
+                <div class="form-group">
+                    <label for="password">Confirm Password*</label><br>
+                    <input type="password" name="password" id="password" required="password">
+                </div>
+                <div class="form-group">
+                    <input type="submit" name="submit" id="submit" value="Sign up" class="bg-success">
+                </div>
+                <div class="form-group">
+                    <a href="login.html">Already have a account? Login</a>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js" referrerpolicy="no-referrer"></script>
+	<script src="./registration.js"></script>
+</body>
+</html>

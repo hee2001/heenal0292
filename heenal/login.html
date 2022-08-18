@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>login</title>
+	<style type="text/css">
+		
+		div{
+			background: white;
+			border: 2px solid black;
+			padding: 5%;
+			margin-left: 35%;
+			margin-right: 35%;		
+			margin-top: 5%;	
+			outline-style:solid;
+  outline-color: white;	
+  outline-width: 15px;
+		}
+		#submit{
+			background: orange;
+			width: 210px;	
+			margin-bottom: 10px;
+		}
+		input{
+			width: 200px;
+		}
+		
+	</style>
+</head>
+<body style="background-image: url(pictures/bg1.jpeg);background-repeat: no-repeat;background-attachment: fixed;background-size: cover;">
+	
+<a href="Index.html"><img src="pictures/arrow.png" width="40px" style="margin:5px; float: left;"></a>
+	<center><h1><span class="typing"></span></h1></center>
+	<div>
+	<form action="Complete.html">
+	<h2><b>Login</b></h2>
+	<label for="username">Username*</label><br>
+    <input type="text" name="username" id="username" required="username"><br><br>
+    <label for="password">Password*</label><br>
+    <input type="password" name="password" id="password" required="password"><br><br>
+    <input type="submit" name="submit" id="submit" value="Login"><br><br>
+    <a href="registration.html">Doesn't have a account?Register</a>
+</form>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js" referrerpolicy="no-referrer"></script>
+<script src="./login.js"></script>
+</body>
+</html>
