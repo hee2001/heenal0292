@@ -1,0 +1,44 @@
+import random
+
+l=["s","w","g"]
+c=0
+h=0
+for i in range(0,10):
+    h1=input()
+    c1=random.choice(l)
+    print(c1)
+    if c1=="s" and h1=="w" :
+        c=c+1
+    elif c1=="w" and h1=="s" :
+        h=h+1
+    elif c1=="w" and h1=="g" :
+        c=c+1
+    elif c1=="g" and h1=="w" :
+        h=h+1
+    elif c1=="s" and h1=="g" :
+        h=h+1
+    elif c1=="g" and h1=="w" :
+        c=c+1
+    else:
+        c=c+0
+        h=h+0
+
+
+if(c>h):
+    print("winner name :-","computer")
+elif(h>c):
+    print("winner name :-", "heenal")
+else:
+    print("DRAW")
+
+print("SCORE:-")
+print("heenal's score:-",h)
+print("computer's score:-",c)
+print("DRAW:-",10-(h+c))
+
+# s  w = s
+# w  g = w
+# s  g = g
+#s for snake
+#g for gun
+#w for water
